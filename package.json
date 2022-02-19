@@ -1,0 +1,31 @@
+{
+  "name": "ngx-dynamic-form",
+  "version": "1.0.0",
+  "description": "generate dynamic forms in angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximosojo/ngx-dynamic-form.git"
+  },
+  "keywords": [
+    "dynamic",
+    "forms",
+    "angular",
+    "angular10",
+    "ng"
+  ],
+  "author": "Máximo Sojo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maximosojo/ngx-dynamic-form/issues"
+  },
+  "homepage": "https://github.com/maximosojo/ngx-dynamic-form#readme",
+  "dependencies": {
+    "@angular/core": "^11.2.13",
+    "@angular/forms": "^11.2.13",
+    "@ngx-translate/core": "^13.0.0"
+  }
+}

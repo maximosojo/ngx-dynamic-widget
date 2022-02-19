@@ -1,0 +1,32 @@
+<div [ngSwitch]="input.widget">
+    <div *ngSwitchCase="'text'">
+        <ngx-dynamic-form-extension-type-text [form]="form" [input]="input"></ngx-dynamic-form-extension-type-text>
+    </div>
+    <div *ngSwitchCase="'email'">
+        <ngx-dynamic-form-extension-type-text [form]="form" [input]="input"></ngx-dynamic-form-extension-type-text>
+    </div>
+    <div *ngSwitchCase="'password'">
+        <ngx-dynamic-form-extension-type-text [form]="form" [input]="input"></ngx-dynamic-form-extension-type-text>
+    </div>
+    <div *ngSwitchCase="'dropdown'">
+        <ngx-dynamic-form-extension-type-dropdown [form]="form" [input]="input"></ngx-dynamic-form-extension-type-dropdown>
+    </div>
+    <div *ngSwitchCase="'checkbox'">
+        <ngx-dynamic-form-extension-type-checkbox [form]="form" [input]="input"></ngx-dynamic-form-extension-type-checkbox>
+    </div>
+    <div *ngSwitchCase="'textarea'">
+        <ngx-dynamic-form-extension-type-textarea [form]="form" [input]="input"></ngx-dynamic-form-extension-type-textarea>
+    </div>
+    <div *ngSwitchCase="'date'">
+        <ngx-dynamic-form-extension-type-text [form]="form" [input]="input"></ngx-dynamic-form-extension-type-text>
+    </div>
+    <div *ngSwitchCase="'money'">
+        <ngx-dynamic-form-extension-type-money [form]="form" [input]="input"></ngx-dynamic-form-extension-type-money>
+    </div>
+    <div *ngSwitchCase="'choice'">
+        <ngx-dynamic-form-extension-type-choice [form]="form" [input]="input"></ngx-dynamic-form-extension-type-choice>
+    </div>
+    <div *ngSwitchCase="'select2entity'">
+        <ngx-dynamic-form-extension-type-select2entity [form]="form" [input]="input"></ngx-dynamic-form-extension-type-select2entity>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div [formGroup]="form" class="form-group mb-2">
+    <div class="form-check pt-4">
+        <input class="form-check-input" autocomplete="off" type="checkbox" [formControlName]="input.key" [id]="input.key"/>
+        <label class="form-check-label" [attr.for]="input.key">{{input.title}}</label>
+        <ngx-dynamic-form-resources-ui-help [input]="input"></ngx-dynamic-form-resources-ui-help>
+    </div>
+</div>
