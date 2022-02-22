@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { FormField } from 'src/app/core/models/form.models';
+import { FormField } from '../../../models/form.models';
 
 @Component({
   selector: 'ngx-dynamic-form-resources-ui-label',

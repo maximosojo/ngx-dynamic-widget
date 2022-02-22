@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { FormField } from 'src/app/core/models/form.models';
+import { FormField } from '../../../models/form.models';
 import { HttpService } from 'src/app/core/services/http.service';
-import { FormService } from 'src/app/core/services/form.service';
+import { FormService } from '../../../services/form.service';
 
 @Component({
   selector: 'ngx-dynamic-form-extension-type-select2entity',

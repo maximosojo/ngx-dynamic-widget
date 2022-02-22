@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { FormField } from 'src/app/core/models/form.models';
+import { FormField } from '../../../models/form.models';
 
 @Component({
   selector: 'ngx-dynamic-form-extension-type-dropdown',
