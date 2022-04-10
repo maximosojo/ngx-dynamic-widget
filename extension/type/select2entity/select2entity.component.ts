@@ -38,7 +38,8 @@ export class NgxDynamicFormExtensionTypeSelect2EntityComponent  implements OnIni
       reqParams += `${req_param}=${this.form.value[req_param]}`
     }
     // Route
-    let route = `${this.input.remote_path}&${reqParams}`.replace(/&/gi,'%26')
+    // let route = `${this.input.remote_path}&${reqParams}`.replace(/&/gi,'%26')
+    let route = `${this.input.remote_path}&${reqParams}`
     this.httpService.get(`${route}`)
 		.subscribe({
 			complete: () => {
