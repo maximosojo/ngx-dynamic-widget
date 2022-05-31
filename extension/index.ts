@@ -1,5 +1,6 @@
 export * from './type/checkbox/checkbox.component';
 export * from './type/choice/choice.component';
+export * from './type/choice-multiple/choice-multiple.component';
 export * from './type/dropdown/dropdown.component';
 export * from './type/money/money.component';
 export * from './type/select2entity/select2entity.component';

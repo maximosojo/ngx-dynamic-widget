@@ -7,6 +7,7 @@ import { NgxCurrencyModule } from "ngx-currency";
 import {
     NgxDynamicFormExtensionTypeCheckboxComponent,
     NgxDynamicFormExtensionTypeChoiceComponent,
+    NgxDynamicFormExtensionTypeChoiceMultipleComponent,
     NgxDynamicFormExtensionTypeDropdownComponent,
     NgxDynamicFormExtensionTypeMoneyComponent,
     NgxDynamicFormExtensionTypeSelect2EntityComponent,
@@ -23,6 +24,7 @@ import {
 const COMPONENTS = [
     NgxDynamicFormExtensionTypeCheckboxComponent,
     NgxDynamicFormExtensionTypeChoiceComponent,
+    NgxDynamicFormExtensionTypeChoiceMultipleComponent,
     NgxDynamicFormExtensionTypeDropdownComponent,
     NgxDynamicFormExtensionTypeMoneyComponent,
     NgxDynamicFormExtensionTypeSelect2EntityComponent,

@@ -24,7 +24,8 @@
         <ngx-dynamic-form-extension-type-money [form]="form" [input]="input"></ngx-dynamic-form-extension-type-money>
     </div>
     <div *ngSwitchCase="'choice'">
-        <ngx-dynamic-form-extension-type-choice [form]="form" [input]="input"></ngx-dynamic-form-extension-type-choice>
+        <ngx-dynamic-form-extension-type-choice [form]="form" [input]="input" *ngIf="input.type == 'string'"></ngx-dynamic-form-extension-type-choice>
+        <ngx-dynamic-form-extension-type-choice-multiple [form]="form" [input]="input" *ngIf="input.type == 'array'"></ngx-dynamic-form-extension-type-choice-multiple>
     </div>
     <div *ngSwitchCase="'select2entity'">
         <ngx-dynamic-form-extension-type-select2entity [form]="form" [input]="input"></ngx-dynamic-form-extension-type-select2entity>
