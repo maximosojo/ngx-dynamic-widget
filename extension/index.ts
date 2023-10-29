@@ -1,4 +1,5 @@
 export * from './widget.component';
+export * from './type/title/title.component';
 export * from './form.component';
 export * from './type/form/form.component';
 export * from './type/form/checkbox/checkbox.component';

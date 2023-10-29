@@ -14,6 +14,7 @@ import {
     NgxDynamicWidgetExtensionTypeTextComponent,
     NgxDynamicWidgetExtensionTypeTextareaComponent,
     NgxDynamicWidgetFormComponent,
+    NgxDynamicWidgetTitleComponent,
     NgxDynamicFormComponent,
     NgxDynamicWidgetComponent,
 } from './extension';
@@ -35,6 +36,7 @@ const COMPONENTS = [
     NgxDynamicWidgetResourcesUIHelpComponent,
     NgxDynamicWidgetResourcesUILabelComponent,
     NgxDynamicWidgetFormComponent,
+    NgxDynamicWidgetTitleComponent,
     NgxDynamicFormComponent,
     NgxDynamicWidgetComponent
 ];
