@@ -3,10 +3,10 @@ import { FormGroup } from '@angular/forms';
 import { FormField } from '../../../models/form.models';
 
 @Component({
-  selector: 'ngx-dynamic-form-extension-type-dropdown',
+  selector: 'ngx-dynamic-widget-extension-type-dropdown',
   templateUrl: './dropdown.component.html'
 })
-export class NgxDynamicFormExtensionTypeDropdownComponent {
+export class NgxDynamicWidgetExtensionTypeDropdownComponent {
 
   @Input() input: FormField<string>;
   @Input() form: FormGroup;

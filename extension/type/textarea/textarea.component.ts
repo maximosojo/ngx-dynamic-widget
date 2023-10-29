@@ -3,10 +3,10 @@ import { FormGroup } from '@angular/forms';
 import { FormField } from '../../../models/form.models';
 
 @Component({
-  selector: 'ngx-dynamic-form-extension-type-textarea',
+  selector: 'ngx-dynamic-widget-extension-type-textarea',
   templateUrl: './textarea.component.html'
 })
-export class NgxDynamicFormExtensionTypeTextareaComponent {
+export class NgxDynamicWidgetExtensionTypeTextareaComponent {
 
   @Input() input: FormField<string>;
   @Input() form: FormGroup;

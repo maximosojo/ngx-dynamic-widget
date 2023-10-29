@@ -1,0 +1,5 @@
+<div [ngSwitch]="widget.widget">
+    <div *ngSwitchCase="'form'">
+        <ngx-dynamic-widget-form [data]="widget"></ngx-dynamic-widget-form>
+    </div>
+</div>

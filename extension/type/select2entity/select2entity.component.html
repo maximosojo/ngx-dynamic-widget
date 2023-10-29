@@ -1,8 +1,8 @@
 <div [formGroup]="form" class="form-group mb-2">
-    <ngx-dynamic-form-resources-ui-label [input]="input"></ngx-dynamic-form-resources-ui-label>
+    <ngx-dynamic-widget-resources-ui-label [input]="input"></ngx-dynamic-widget-resources-ui-label>
     <select [id]="input.key" class="form-control" [formControlName]="input.key" (click)="onClick()">
         <option value="">{{'label.select'|translate}}</option>
         <option *ngFor="let row of response?.results" [value]="row.id">{{row.text}}</option>
     </select>
-    <ngx-dynamic-form-resources-ui-help [input]="input"></ngx-dynamic-form-resources-ui-help>
+    <ngx-dynamic-widget-resources-ui-help [input]="input"></ngx-dynamic-widget-resources-ui-help>
 </div>

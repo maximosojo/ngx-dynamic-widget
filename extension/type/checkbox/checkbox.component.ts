@@ -3,10 +3,10 @@ import { FormGroup } from '@angular/forms';
 import { FormField } from '../../../models/form.models';
 
 @Component({
-  selector: 'ngx-dynamic-form-extension-type-checkbox',
+  selector: 'ngx-dynamic-widget-extension-type-checkbox',
   templateUrl: './checkbox.component.html'
 })
-export class NgxDynamicFormExtensionTypeCheckboxComponent {
+export class NgxDynamicWidgetExtensionTypeCheckboxComponent {
 
   @Input() input: FormField<string>;
   @Input() form: FormGroup;

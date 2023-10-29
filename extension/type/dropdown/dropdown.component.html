@@ -1,7 +1,7 @@
 <div [formGroup]="form" class="form-group mb-2">
-    <ngx-dynamic-form-resources-ui-label [input]="input"></ngx-dynamic-form-resources-ui-label>
+    <ngx-dynamic-widget-resources-ui-label [input]="input"></ngx-dynamic-widget-resources-ui-label>
     <select class="custom-select" autocomplete="off" [id]="input.key" [formControlName]="input.key">
         <option *ngFor="let opt of input.options" [value]="opt.key">{{opt.value}}</option>
     </select>
-    <ngx-dynamic-form-resources-ui-help [input]="input"></ngx-dynamic-form-resources-ui-help>
+    <ngx-dynamic-widget-resources-ui-help [input]="input"></ngx-dynamic-widget-resources-ui-help>
 </div>

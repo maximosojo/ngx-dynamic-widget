@@ -9,10 +9,11 @@ export class FormField<T> {
     disabled: boolean;
     property_order: number;
     remote_path: string;
-    req_params: {};
-    choices: {};
-    options: {};
-    attr: { class: string; style: string; suffix:string; help:string };
+    req_params: object;
+    choices: any[];
+    options: any[];
+    attr: any;
+    // attr: object = { class: string; style: string; suffix:string; help:string };
   
     constructor(
       options: {
@@ -25,14 +26,11 @@ export class FormField<T> {
         required?: boolean;
         disabled?: boolean;
         property_order?: number;
-        req_params?: {};
-        choices?: {};
-        options?: {};
-        attr?: { 
-          class: string;
-          style: string;
-          suffix: string;
-          help: string };
+        req_params?: any;
+        choices?: any[];
+        options?: any[];
+        // attr?: object;
+        // attr?: FormAttrField
       } = {}
     ) {
       this.key = options.key || "";
@@ -45,8 +43,8 @@ export class FormField<T> {
       this.disabled = !!options.disabled;
       this.property_order = options.property_order === undefined ? 1 : options.property_order;
       this.req_params = options.req_params;
-      this.choices = options.choices;
-      this.options = options.options;
-      this.attr = options.attr;
+      this.choices = options.choices || [];
+      this.options = options.options || [];
+      // this.attr = options.attr || {};
     }
   }

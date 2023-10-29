@@ -1,0 +1,8 @@
+<form class="authentication-form" *ngIf="form" name="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div *ngFor="let formField of formData" class="form-group">
+      <ngx-dynamic-form [input]="formField" [form]="form"></ngx-dynamic-form>
+    </div>
+    <div class="d-grid">
+      <button class="btn btn-primary btn-block" type="submit" [disabled]="form.invalid">{{'button.resetting'|translate}}</button>
+    </div>
+</form>

@@ -4,10 +4,10 @@ import { FormField } from '../../../models/form.models';
 import { FormService } from '../../../services/form.service';
 
 @Component({
-  selector: 'ngx-dynamic-form-extension-type-choice-multiple',
+  selector: 'ngx-dynamic-widget-extension-type-choice-multiple',
   templateUrl: './choice-multiple.component.html'
 })
-export class NgxDynamicFormExtensionTypeChoiceMultipleComponent {
+export class NgxDynamicWidgetExtensionTypeChoiceMultipleComponent {
 
   @Input() input: FormField<string>;
   @Input() form: FormGroup;

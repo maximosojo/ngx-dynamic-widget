@@ -5,15 +5,15 @@ import { HttpService } from 'src/app/core/services/http.service';
 import { FormService } from '../../../services/form.service';
 
 @Component({
-  selector: 'ngx-dynamic-form-extension-type-select2entity',
+  selector: 'ngx-dynamic-widget-extension-type-select2entity',
   templateUrl: './select2entity.component.html'
 })
-export class NgxDynamicFormExtensionTypeSelect2EntityComponent  implements OnInit {
+export class NgxDynamicWidgetExtensionTypeSelect2EntityComponent  implements OnInit {
 
   @Input() input: FormField<string>;
   @Input() form: FormGroup;
 	loading: boolean = false
-  response
+  response: any;
 
   constructor(private httpService: HttpService,private formService: FormService) { }
 

@@ -7,31 +7,31 @@ import { FormField } from '../models/form.models';
 })
 export class FormService {
 
-  form:FormGroup;
-  formData:any = [];
+  form: FormGroup;
+  formData: any = [];
   @Output() choiceSelected: EventEmitter<boolean> = new EventEmitter();
 
   createForm(formData: FormField<string>[]): FormGroup {
       this.formData = []
-      //this.formData.push([])
       const group: any = {};
-      Object.keys(formData).forEach(key => {
-          let input = formData[key]
-          let validator: ValidatorFn[] = input.required ? [Validators.required] : [];
+      
+      Object.values(formData).forEach(input => {
+        let validator: ValidatorFn[] = input.required ? [Validators.required] : [];
           // group[input.key] = validator.length > 0 ? new FormControl(input.empty_data || '', validator)
-          let value = input.data || ''
+          // let value = input.data || ''
+          let value = '';
           let disabled = input.disabled
           group[input.key] = new FormControl({
             value: value,
             disabled: disabled
           },validator);
-          this.formData.push(formData[key])
-      })
+          this.formData.push(input)
+      });
       
       return new FormGroup(group);
   }
 
-  public handleRequest(form) {
+  public handleRequest(form: FormGroup) {
 
   }
 
