@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { FormField } from '../../../models/form.models';
+import { FormField } from '../../../../models/form.models';
 import { HttpService } from 'src/app/core/services/http.service';
-import { FormService } from '../../../services/form.service';
+import { FormService } from '../../../../services/form.service';
 
 @Component({
-  selector: 'ngx-dynamic-widget-extension-type-select2entity',
+  selector: 'ngx-dynamic-widget-extension-type-form-select2entity',
   templateUrl: './select2entity.component.html'
 })
 export class NgxDynamicWidgetExtensionTypeSelect2EntityComponent  implements OnInit {

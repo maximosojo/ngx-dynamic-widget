@@ -1,33 +1,33 @@
 <div [ngSwitch]="input.widget">
     <div *ngSwitchCase="'text'">
-        <ngx-dynamic-widget-extension-type-text [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-text>
+        <ngx-dynamic-widget-extension-type-form-text [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-form-text>
     </div>
     <div *ngSwitchCase="'email'">
-        <ngx-dynamic-widget-extension-type-text [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-text>
+        <ngx-dynamic-widget-extension-type-form-text [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-form-text>
     </div>
     <div *ngSwitchCase="'password'">
-        <ngx-dynamic-widget-extension-type-text [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-text>
+        <ngx-dynamic-widget-extension-type-form-text [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-form-text>
     </div>
     <div *ngSwitchCase="'dropdown'">
-        <ngx-dynamic-widget-extension-type-dropdown [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-dropdown>
+        <ngx-dynamic-widget-extension-type-form-dropdown [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-form-dropdown>
     </div>
     <div *ngSwitchCase="'checkbox'">
-        <ngx-dynamic-widget-extension-type-checkbox [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-checkbox>
+        <ngx-dynamic-widget-extension-type-form-checkbox [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-form-checkbox>
     </div>
     <div *ngSwitchCase="'textarea'">
-        <ngx-dynamic-widget-extension-type-textarea [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-textarea>
+        <ngx-dynamic-widget-extension-type-form-textarea [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-form-textarea>
     </div>
     <div *ngSwitchCase="'date'">
-        <ngx-dynamic-widget-extension-type-text [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-text>
+        <ngx-dynamic-widget-extension-type-form-text [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-form-text>
     </div>
     <div *ngSwitchCase="'money'">
-        <ngx-dynamic-widget-extension-type-money [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-money>
+        <ngx-dynamic-widget-extension-type-form-money [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-form-money>
     </div>
     <div *ngSwitchCase="'choice'">
-        <ngx-dynamic-widget-extension-type-choice [form]="form" [input]="input" *ngIf="input.type == 'string'"></ngx-dynamic-widget-extension-type-choice>
-        <ngx-dynamic-widget-extension-type-choice-multiple [form]="form" [input]="input" *ngIf="input.type == 'array'"></ngx-dynamic-widget-extension-type-choice-multiple>
+        <ngx-dynamic-widget-extension-type-form-choice [form]="form" [input]="input" *ngIf="input.type == 'string'"></ngx-dynamic-widget-extension-type-form-choice>
+        <ngx-dynamic-widget-extension-type-form-choice-multiple [form]="form" [input]="input" *ngIf="input.type == 'array'"></ngx-dynamic-widget-extension-type-form-choice-multiple>
     </div>
     <div *ngSwitchCase="'select2entity'">
-        <ngx-dynamic-widget-extension-type-select2entity [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-select2entity>
+        <ngx-dynamic-widget-extension-type-form-select2entity [form]="form" [input]="input"></ngx-dynamic-widget-extension-type-form-select2entity>
     </div>
 </div>

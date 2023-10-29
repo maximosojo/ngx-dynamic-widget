@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { FormField } from '../../../models/form.models';
+import { FormField } from '../../../../models/form.models';
 
 @Component({
-  selector: 'ngx-dynamic-widget-extension-type-textarea',
+  selector: 'ngx-dynamic-widget-extension-type-form-textarea',
   templateUrl: './textarea.component.html'
 })
 export class NgxDynamicWidgetExtensionTypeTextareaComponent {

@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { FormField } from '../../../models/form.models';
+import { FormField } from '../../../../models/form.models';
 
 @Component({
-  selector: 'ngx-dynamic-widget-extension-type-checkbox',
+  selector: 'ngx-dynamic-widget-extension-type-form-checkbox',
   templateUrl: './checkbox.component.html'
 })
 export class NgxDynamicWidgetExtensionTypeCheckboxComponent {

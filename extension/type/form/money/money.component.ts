@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { FormField } from '../../../models/form.models';
+import { FormField } from '../../../../models/form.models';
 
 @Component({
-  selector: 'ngx-dynamic-widget-extension-type-dropdown',
-  templateUrl: './dropdown.component.html'
+  selector: 'ngx-dynamic-widget-extension-type-form-money',
+  templateUrl: './money.component.html'
 })
-export class NgxDynamicWidgetExtensionTypeDropdownComponent {
+export class NgxDynamicWidgetExtensionTypeMoneyComponent {
 
   @Input() input: FormField<string>;
   @Input() form: FormGroup;
