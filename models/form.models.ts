@@ -29,7 +29,7 @@ export class FormField<T> {
         req_params?: any;
         choices?: any[];
         options?: any[];
-        // attr?: object;
+        attr?: object;
         // attr?: FormAttrField
       } = {}
     ) {
@@ -45,6 +45,6 @@ export class FormField<T> {
       this.req_params = options.req_params;
       this.choices = options.choices || [];
       this.options = options.options || [];
-      // this.attr = options.attr || {};
+      this.attr = options.attr || {};
     }
   }

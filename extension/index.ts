@@ -1,5 +1,9 @@
 export * from './widget.component';
 export * from './type/title/title.component';
+export * from './type/sub-title/sub-title.component';
+export * from './type/list-group/list-group.component';
+export * from './type/list-group-flush/list-group-flush.component';
+export * from './type/card/card.component';
 export * from './form.component';
 export * from './type/form/form.component';
 export * from './type/form/checkbox/checkbox.component';
@@ -10,3 +14,4 @@ export * from './type/form/money/money.component';
 export * from './type/form/select2entity/select2entity.component';
 export * from './type/form/text/text.component';
 export * from './type/form/textarea/textarea.component';
+export * from './type/form/button/button.component';

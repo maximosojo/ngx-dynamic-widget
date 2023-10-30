@@ -1,0 +1,13 @@
+<ul class="list-group list-group-flush">
+    <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-bottom" *ngFor="let item of data.items; index as i">
+        <div>
+            <h3 class="h6 mb-1">{{item.title}}</h3>
+            <p class="small pe-4">{{item.sub_title}}</p>
+        </div>
+        <div>
+            <a href="{{item.uri_action}}" class="btn btn-primary" *ngIf="item.uri_action">
+                <span *ngIf="item.uri_title">{{item.uri_title}}</span>
+            </a>
+        </div>
+    </li>
+</ul>

@@ -5,4 +5,16 @@
     <div *ngSwitchCase="'title'">
         <ngx-dynamic-widget-title [data]="widget"></ngx-dynamic-widget-title>
     </div>
+    <div *ngSwitchCase="'sub_title'">
+        <ngx-dynamic-widget-sub-title [data]="widget"></ngx-dynamic-widget-sub-title>
+    </div>
+    <div *ngSwitchCase="'card'">
+        <ngx-dynamic-widget-card [data]="widget"></ngx-dynamic-widget-card>
+    </div>
+    <div *ngSwitchCase="'list_group'">
+        <ngx-dynamic-widget-list-group [data]="widget"></ngx-dynamic-widget-list-group>
+    </div>
+    <div *ngSwitchCase="'list_group_flush'">
+        <ngx-dynamic-widget-list-group-flush [data]="widget"></ngx-dynamic-widget-list-group-flush>
+    </div>
 </div>

@@ -1,0 +1,9 @@
+<div class="card mb-2">
+    <div class="card-body">
+        <h5 class="card-title">{{data.title}}</h5>
+        <p class="card-text">{{data.sub_title}}</p>
+        <a href="{{data.uri_action}}" class="btn btn-primary" *ngIf="data.uri_action">
+            <span *ngIf="data.uri_title">{{data.uri_title}}</span>
+        </a>
+    </div>
+</div>
