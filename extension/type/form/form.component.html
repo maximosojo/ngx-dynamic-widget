@@ -1,3 +1,4 @@
+<ngx-dynamic-widget-preloader [display]="loading"></ngx-dynamic-widget-preloader>
 <form *ngIf="form" name="form" [formGroup]="form" (ngSubmit)="onSubmit()">
     <div *ngFor="let formField of formData" class="form-group">
       <ngx-dynamic-form [input]="formField" [form]="form"></ngx-dynamic-form>

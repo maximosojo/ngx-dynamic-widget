@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { CurrencyMaskConfig, CurrencyMaskModule, CURRENCY_MASK_CONFIG } from 'ng2-currency-mask';
+import { RouterModule, Routes } from '@angular/router';
 
 import {
     NgxDynamicWidgetExtensionTypeCheckboxComponent,
@@ -20,6 +21,7 @@ import {
     NgxDynamicWidgetListGroupComponent,
     NgxDynamicWidgetListGroupFlushComponent,
     NgxDynamicWidgetCardComponent,
+    NgxDynamicWidgetPreloaderComponent,
     NgxDynamicFormComponent,
     NgxDynamicWidgetComponent,
 } from './extension';
@@ -47,6 +49,7 @@ const COMPONENTS = [
     NgxDynamicWidgetListGroupComponent,
     NgxDynamicWidgetListGroupFlushComponent,
     NgxDynamicWidgetCardComponent,
+    NgxDynamicWidgetPreloaderComponent,
     NgxDynamicFormComponent,
     NgxDynamicWidgetComponent
 ];
@@ -57,9 +60,13 @@ const COMPONENTS = [
     FormsModule,
     ReactiveFormsModule,
     TranslateModule,
-    CurrencyMaskModule
+    CurrencyMaskModule,
+    RouterModule,
   ],
-  exports: [...COMPONENTS],
+  exports: [
+    RouterModule,
+    ...COMPONENTS
+  ],
   declarations: [...COMPONENTS],
 })
 export class NgxDynamicWidgetModule { }

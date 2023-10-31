@@ -13,6 +13,7 @@ export class FormField<T> {
     choices: any[];
     options: any[];
     attr: any;
+    data: any;
     // attr: object = { class: string; style: string; suffix:string; help:string };
   
     constructor(
@@ -30,6 +31,7 @@ export class FormField<T> {
         choices?: any[];
         options?: any[];
         attr?: object;
+        data?: any;
         // attr?: FormAttrField
       } = {}
     ) {
@@ -46,5 +48,6 @@ export class FormField<T> {
       this.choices = options.choices || [];
       this.options = options.options || [];
       this.attr = options.attr || {};
+      this.data = options.data || null;
     }
   }

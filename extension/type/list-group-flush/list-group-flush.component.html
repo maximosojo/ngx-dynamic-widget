@@ -5,7 +5,7 @@
             <p class="small pe-4">{{item.sub_title}}</p>
         </div>
         <div>
-            <a href="{{item.uri_action}}" class="btn btn-primary" *ngIf="item.uri_action">
+            <a [routerLink]="item.uri_action" class="btn btn-primary" *ngIf="item.uri_action">
                 <span *ngIf="item.uri_title">{{item.uri_title}}</span>
             </a>
         </div>

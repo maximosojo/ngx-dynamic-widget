@@ -18,8 +18,7 @@ export class FormService {
       Object.values(formData).forEach(input => {
         let validator: ValidatorFn[] = input.required ? [Validators.required] : [];
           // group[input.key] = validator.length > 0 ? new FormControl(input.empty_data || '', validator)
-          // let value = input.data || ''
-          let value = '';
+          let value = input.data || ''
           let disabled = input.disabled
           group[input.key] = new FormControl({
             value: value,
