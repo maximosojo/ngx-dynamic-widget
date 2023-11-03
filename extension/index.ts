@@ -14,5 +14,6 @@ export * from './type/form/dropdown/dropdown.component';
 export * from './type/form/money/money.component';
 export * from './type/form/select2entity/select2entity.component';
 export * from './type/form/text/text.component';
+export * from './type/form/tel/tel.component';
 export * from './type/form/textarea/textarea.component';
 export * from './type/form/button/button.component';
