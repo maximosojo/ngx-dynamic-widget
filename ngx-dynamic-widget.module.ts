@@ -22,6 +22,7 @@ import {
     NgxDynamicWidgetListGroupComponent,
     NgxDynamicWidgetListGroupFlushComponent,
     NgxDynamicWidgetCardComponent,
+    NgxDynamicWidgetCardActionTopComponent,
     NgxDynamicWidgetPreloaderComponent,
     NgxDynamicFormComponent,
     NgxDynamicWidgetComponent,
@@ -51,6 +52,7 @@ const COMPONENTS = [
     NgxDynamicWidgetListGroupComponent,
     NgxDynamicWidgetListGroupFlushComponent,
     NgxDynamicWidgetCardComponent,
+    NgxDynamicWidgetCardActionTopComponent,
     NgxDynamicWidgetPreloaderComponent,
     NgxDynamicFormComponent,
     NgxDynamicWidgetComponent

@@ -1,0 +1,17 @@
+<div class="card mb-2">
+    <div class="card-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h5 class="fs-5 fw-bold mb-0">{{data.title}}</h5>
+            </div>
+            <div class="col text-end">
+                <a [routerLink]="data.uri_action" class="btn btn-primary" *ngIf="data.uri_action && data.uri_action_type == 'type_action_ancla'">
+                    <span *ngIf="data.uri_title">{{data.uri_title}}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">{{data.sub_title}}</h6>
+    </div>
+</div>

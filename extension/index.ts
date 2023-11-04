@@ -5,6 +5,7 @@ export * from './type/list-group/list-group.component';
 export * from './type/list-group-flush/list-group-flush.component';
 export * from './type/preloader/preloader.component';
 export * from './type/card/card.component';
+export * from './type/card-action-top/card-action-top.component';
 export * from './form.component';
 export * from './type/form/form.component';
 export * from './type/form/checkbox/checkbox.component';

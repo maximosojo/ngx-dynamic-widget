@@ -11,6 +11,9 @@
     <div *ngSwitchCase="'card'">
         <ngx-dynamic-widget-card [data]="widget"></ngx-dynamic-widget-card>
     </div>
+    <div *ngSwitchCase="'card_action_top'">
+        <ngx-dynamic-widget-card-action-top [data]="widget"></ngx-dynamic-widget-card-action-top>
+    </div>
     <div *ngSwitchCase="'list_group'">
         <ngx-dynamic-widget-list-group [data]="widget"></ngx-dynamic-widget-list-group>
     </div>
