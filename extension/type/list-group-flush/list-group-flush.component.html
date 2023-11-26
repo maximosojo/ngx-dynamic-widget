@@ -5,9 +5,15 @@
             <p class="small pe-4">{{item.sub_title}}</p>
         </div>
         <div>
-            <a [routerLink]="item.uri_action" class="btn btn-primary" *ngIf="item.uri_action">
-                <span *ngIf="item.uri_title">{{item.uri_title}}</span>
+            <a [routerLink]="item.uri_action.path" class="btn btn-link" *ngIf="item.uri_action && item.uri_action.action_type == 'type_action_ancla'">
+                <mat-icon *ngIf="item.uri_action.icon">{{item.uri_action.icon}}</mat-icon>
+                <span *ngIf="item.uri_action.title">{{item.uri_action.title}}</span>
             </a>
+
+            <!-- <a [routerLink]="[item.uri_action.path,item.uri_action.arguments]" class="btn btn-link" *ngIf="item.uri_action && item.uri_action.action_type == 'type_action_ancla' && item.uri_action.arguments">
+                <mat-icon *ngIf="item.uri_action.icon">{{item.uri_action.icon}}</mat-icon>
+                <span *ngIf="item.uri_action.title">{{item.uri_action.title}}</span>
+            </a> -->
         </div>
     </li>
 </ul>

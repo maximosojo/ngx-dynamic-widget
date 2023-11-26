@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { CurrencyMaskConfig, CurrencyMaskModule, CURRENCY_MASK_CONFIG } from 'ng2-currency-mask';
 import { RouterModule, Routes } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
 
 import {
     NgxDynamicWidgetExtensionTypeCheckboxComponent,
@@ -17,6 +18,7 @@ import {
     NgxDynamicWidgetExtensionTypeTextareaComponent,
     NgxDynamicWidgetExtensionTypeButtonComponent,
     NgxDynamicWidgetFormComponent,
+    NgxDynamicWidgetButtonComponent,
     NgxDynamicWidgetTitleComponent,
     NgxDynamicWidgetSubTitleComponent,
     NgxDynamicWidgetListGroupComponent,
@@ -47,6 +49,7 @@ const COMPONENTS = [
     NgxDynamicWidgetResourcesUIHelpComponent,
     NgxDynamicWidgetResourcesUILabelComponent,
     NgxDynamicWidgetFormComponent,
+    NgxDynamicWidgetButtonComponent,
     NgxDynamicWidgetTitleComponent,
     NgxDynamicWidgetSubTitleComponent,
     NgxDynamicWidgetListGroupComponent,
@@ -66,9 +69,11 @@ const COMPONENTS = [
     TranslateModule,
     CurrencyMaskModule,
     RouterModule,
+    MatIconModule,
   ],
   exports: [
     RouterModule,
+    MatIconModule,
     ...COMPONENTS
   ],
   declarations: [...COMPONENTS],
