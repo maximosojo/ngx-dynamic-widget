@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { UriAction } from '../../../models/uri-action.models';
 
 @Component({
   selector: 'ngx-dynamic-widget-button',
@@ -18,9 +19,12 @@ export class NgxDynamicWidgetButtonComponent implements OnInit  {
   }
 
   ngOnInit() {
-    this.path = this.data.uri_action.path;
-    this.actionType = this.data.uri_action.action_type;
-    this.icon = this.data.uri_action.icon;
+    // UriAction
+    var uriAction = new UriAction(this.data.uri_action);
+    this.path = uriAction.path;
+    this.actionType = uriAction.action_type;
+    this.icon = uriAction.icon;
+
     if (this.data.attr) {
       this.class = this.data.attr.class;
     }

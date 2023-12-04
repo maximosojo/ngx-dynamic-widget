@@ -1,4 +1,5 @@
 export * from './widget.component';
+export * from './type/heading/heading.component';
 export * from './type/button/button.component';
 export * from './type/title/title.component';
 export * from './type/sub-title/sub-title.component';
